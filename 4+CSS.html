@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4 | Thalia Rizkika</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #d3d3d3;
+            text-align: center;
+            padding: 60px 0;
+            font-size: 2.5em;
+        }
+        nav {
+            background-color: #333;
+            text-align: left;
+            padding: 0;
+            padding-left: 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 10px 20px;
+            background-color: transparent;
+            display: inline-block;
+            border-radius: 5px;
+            position: relative;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        nav a.active, nav a:hover {
+            color: white;
+            background-color: #555;
+        }
+        .container {
+            display: flex;
+            padding: 0px;
+        }
+        .sidebar {
+            width: 30%;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .main-content {
+            width: 70%;
+            padding: 20px;
+            background-color: white;
+        }
+        .sidebar img {
+            width: 400px;
+            height: 200px;
+            display: block;
+            margin-bottom: 20px;
+        }
+        .main-content .image-small {
+            width: 400px;
+            height: 100px;
+            display: block;
+            margin-bottom: 20px;
+        }
+        .main-content .grid-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #ccc;
+            margin-bottom: 20px;
+        }
+        .grid-container {
+            padding: 20px;
+            margin-bottom: 20px;
+            width: 850px;
+            height: 200px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(6, 120px);
+            grid-template-rows: repeat(2, 87px);
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+        }
+        .grid img {
+            width: 100%;
+            height: 100%;
+            background-color: #1E1E1E;
+            opacity: 0.5;
+            border: 5px solid rgba(30, 30, 30, 0.7);
+            object-fit: cover;
+        }
+        .audio-group {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        footer {
+            background-color: #d3d3d3;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 36px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        MY WEBSITE
+    </header>
+    <nav>
+        <a href="1 A.html">Link 1</a>
+        <a href="2.html">Link 2</a>
+        <a href="3.html">Link 3</a>
+        <a href="4.html"class="active">Link 4</a>
+    </nav>
+    <div class="container">
+        <div class="sidebar">
+            <h2>About Me</h2>
+            <p>Photo of me:</p>
+            <img src="3.jpeg" alt="My Photo">
+            <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+            <h3>More Text</h3>
+            <p>Lorem ipsum dolor sit ame.</p>
+            <img class="image-small" src="1.jpg" alt="Image">
+            <img class="image-small" src="2.jpg" alt="Image">
+            <img class="image-small" src="awal.jpeg" alt="Image">
+        </div>
+        <div class="main-content">
+            <h2>TITLE HEADING</h2>
+            <p>Title description</p>
+            <div class="video">
+                <iframe width="880" height="315" src="https://www.youtube.com/embed/QFLAuddS6qM?si=QoQARGW0iciGbJM6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="audio-group">
+                <audio controls>
+                    <source src="audio-file.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <audio controls>
+                    <source src="audio-file.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <h2>TITLE HEADING</h2>
+            <p>Title description</p>
+            <div class="grid-container">
+                <div class="grid">
+                    <img src="one.png" alt="Image">
+                    <img src="two.jpg" alt="Image">
+                    <img src="three.jpg" alt="Image">
+                    <img src="four.jpg" alt="Image">
+                    <img src="five.jpeg" alt="Image">
+                    <img src="six.png" alt="Image">
+                    <img src="seven.jpg" alt="Image">
+                    <img src="eight.jpeg" alt="Image">
+                    <img src="nine.jpg" alt="Image">
+                    <img src="ten.jpg" alt="Image">
+                    <img src="eleven.jpg" alt="Image">
+                    <img src="twelve.jpg" alt="Image">
+                </div>
+            </div>
+            <p>Some text..</p>
+            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+        </div>
+    </div>
+    <footer>
+        Footer
+    </footer>
+</body>
+</html>

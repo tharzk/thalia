@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3 | Thalia Rizkika</title>
+    <style>
+        .wrapper {
+            width: 1000px;
+            padding: 20px;
+            margin: 0 auto;
+            background-color: #fff;
+            border: 1px solid #000;
+            position: relative;
+        }
+
+        .form-container {
+            width: 950px;
+            padding: 20px;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.8);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .background-image {
+            position: absolute;
+            top: 50%;
+            left: 60%;
+            transform: translate(-50%, -50%);
+            width: 400px;
+            height: auto;
+            z-index: 1;
+        }
+
+        fieldset {
+            border: 1px solid #000;
+            padding: 20px;
+            margin: 0;
+            position: relative;
+            z-index: 2;
+        }
+
+        legend {
+            font-weight: bold;
+            font-size: 1.5em;
+            text-align: left;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            width: 100%;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        label {
+            display: inline-block;
+            width: 150px;
+            vertical-align: top;
+        }
+
+        input[type="text"], input[type="email"], input[type="date"], input[type="tel"], textarea {
+            width: 200px;
+            padding: 5px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            height: 80px;
+        }
+
+        input[type="submit"], input[type="reset"] {
+            padding: 10px 20px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+        .gender-options {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <img src="logo_agora.png" alt="Logo Agora" class="background-image" />
+        <div class="form-container">
+            <form action="contact.php" method="POST">
+                <fieldset>
+                    <legend>ISI FORM DENGAN DATA YANG VALID</legend>
+                    <p>
+                        <label>Nama:</label>
+                        <input type="text" name="nama" placeholder="Masukkan Nama Anda..." />
+                    </p>
+                    <p>
+                        <label>Tanggal Lahir:</label>
+                        <input type="date" name="tanggal_lahir" />
+                    </p>
+                    <p>
+                        <label>Jenis Kelamin:</label>
+                        <div class="gender-options">
+                            <label><input type="radio" name="jenis_kelamin" value="laki-laki" /> Laki-laki</label>
+                            <label><input type="radio" name="jenis_kelamin" value="perempuan" /> Perempuan</label>
+                        </div>
+                    </p>
+                    <p>
+                        <label>Alamat:</label>
+                        <textarea name="alamat" placeholder="Masukkan Alamat Anda..."></textarea>
+                    </p>
+                    <p>
+                        <label>Email:</label>
+                        <input type="email" name="email" placeholder="Masukkan Email Anda..." />
+                    </p>
+                    <p>
+                        <label>Phone:</label>
+                        <input type="tel" name="phone" placeholder="Masukkan No Telepon Anda..." />
+                    </p>
+                    <p>
+                        <label>Personal Site:</label>
+                        <input type="text" name="website" placeholder="Masukkan Nama Web..." />
+                    </p>
+                    <p>
+                        <input type="submit" value="Submit" />
+                        <input type="reset" value="Reset" />
+                    </p>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
